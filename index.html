@@ -8,9 +8,20 @@
 		  background-image: url('back2.jpg'); 
 		  background-attachment: fixed;
 		}
+		div {
+			margin-top: 5%;	
+		}
+		b{
+			font-size: 20px;
+		}
 
 		#display_picture{
 			width: 200px;
+		}
+		#scholastic_pic{
+			width: 130px;
+			margin-right: 30%;
+			/*float: right;*/
 		}
 
 		.topnav {
@@ -20,7 +31,7 @@
 
 		.topnav a {
 		  float: left;
-		  color: #f2f2f2;
+		  color: #ffffff;
 		  text-align: center;
 		  padding: 14px 16px;
 		  text-decoration: none;
@@ -42,23 +53,62 @@
 	<title>
 		Mustafa Chasmai
 	</title>
-	<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
+	<div style="margin-top: 0;" class="topnav">
+		  <a class="active" href="#home">Home</a>
+		  <a href="#contact">Contact</a>
+		  <a href="#about">About</a>
+	</div>
 </head>
 <body>
-<p align="center">
+<div align="center" style="margin-top: 2%;">
 		<img id="display_picture" src="dp.jpg">
-</p>
-		<h3 align="center">Mustafa Chasmai</h3>
-
-
-<div align="center">
-	Enthusiastic learner and curious reader. Sometimes considered too funny. <br>
+		<h2 align="center">Mustafa Chasmai</h2>
+	Enthusiastic learner and curious reader. <br>
 	Can code in C++, and am learning web development to build websites like this. <br>
-	Am a good swimmwer, play squash and some other random sports.
+	Am a good swimmwer, play squash and some table tennis.
+</div>
+
+<div>
+	<p id="scholastic" align="left" style="margin-left: 20%">
+		<b><u>Academic Achievements</u></b><br>
+		<img id="scholastic_pic" src="scholas.jpg" align="right">
+		JEE Advanced AIR 91	<br>
+		Gold medal in INPhO and selected for the <br> 	International Physics Olympiad Camp (OCSC)<br>
+		KVPY and inspire fellow
+	</p>
+</div>
+
+<div>
+	<p align="right" style="margin-right: 24%">
+		<b><u>Experience</u></b><br>
+		<img src="robotics.png" style="width: 160px; margin-left: 27%; float: left; " >
+		Built a line follower robot<br>
+		in Robothlon IIT Delhi.<br>
+		Participated in ICPC 2019.<br>
+		Participated in many CodeChef and HackerRank<br>
+		online coding competitions.
+		
+	</p>
+</div>
+	
+<div>
+	<p align="left" style="float: left; margin-left: 20%">
+			<b><u>Hobbies</u></b><br>
+			Reading and watching movies.<br>
+			Solving Rubiks cubes.
+	</p>
+	<img src="robotics.png"  style="width: 200px; margin-left: 5%"> 
+	<p align="right" style="float: right; margin-right: 24%">
+		<b><u>Extra Curriculars</u></b><br>
+		Won various medals in swimming by the <br>
+		Rashtriya Life Saving Society.<br>
+		Avid player of squash and table tennis.
+	</p>
+	
+
+
+
+
 </div>
 
 </body>
