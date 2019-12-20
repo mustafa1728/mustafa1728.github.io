@@ -113,30 +113,30 @@
 		<input type="submit" value="Post" onclick="insert()" style="width:50px;" />
 	</div>
 
-	<div id="display"></div>
+	<div class="row" style="margin-top: 0px;">
+		<div class="col-sm-4" style="margin-top: 0px;"></div>
+		<div class="col-sm-4" align="center" style="margin-top: 0px;">
+			<div  style=" width: 300px;" id="display" align="center">
+				<hr>
+			</div>
+		</div>
+		<div class="col-sm-4" style="margin-top: 0px;"></div>
+	</div>
 
 
 </body>
 
 <script type="text/javascript">
 	var titles=[];
+	var i=0;
 	var titleInput = document.getElementById("title");
 	var messageBox = document.getElementById("display");
-
-	function Allow(){
-		if (!document.title.value.match(/[a-zA-Z]$/) && document.title.value !="")
-		{
-			document.title.value="";
-			alert("Please Enter only alphabets");
-		}
-		window.location.reload();
-	}
 
 	function insert(){
 		titles.push(titleInput.value);
 		titleInput.value = "";
-		messageBox.innerHTML = "";
-		messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
+		messageBox.innerHTML += titles[i]+ "<hr>";
+		i++;
 	}
 </script>
 
