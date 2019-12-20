@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+
 	<style>
 		body {
 
@@ -9,30 +22,34 @@
 		  background-attachment: fixed;
 		}
 		div {
-			margin-top: 5%;	
+			margin-top: 2%;	
 		}
 		b{
+			font-size: 25px;
+		}
+		p{
 			font-size: 20px;
 		}
+		#title{
+			min-width: 400px;
+		}
 		.smalldiv{
-			width: 400px;
+			width: 500px;
 			max-height: 200px;
 		}
 
-		.smallerdiv{
-			width: 200px;
-		}
+
 		#display_picture{
 			width: 200px;
 		}
 		#scholastic_pic{
 			width: 200px;
-			/*float: right;*/
 		}
 
 		.topnav {
 		  overflow: hidden;
 		  background-color: #333;
+		  margin-top: 2%;	
 		}
 
 		.topnav a {
@@ -47,6 +64,7 @@
 		.topnav a:hover {
 		  background-color: #ddd;
 		  color: black;
+
 		}
 
 		.topnav a.active {
@@ -59,78 +77,123 @@
 	<title>
 		Mustafa Chasmai
 	</title>
-	<div class="topnav">
+	<div class="topnav" >
 		  <a class="active" href="#home">Home</a>
 		  <a href="#contact">Contact</a>
 		  <a href="#about">About</a>
 	</div>
 </head>
 <body>
-<div align="center" style="margin-top: 2%;">
-		<img id="display_picture" src="dp.jpg">
-		<h2 align="center">Mustafa Chasmai</h2>
-	Enthusiastic learner and curious reader. <br>
-	Can code in C++, and am learning web development to build websites like this. <br>
-	Am a good swimmwer, play squash and some table tennis.
-</div>
 
-<div >
-	<div class="smalldiv" style="float: right; margin-right: 22%;">
-		<img id="scholastic_pic" src="scholas.jpg" align="right">
+	<div align="center" style="margin-top: 2%;">
+			<img id="display_picture" src="dp.jpg">
+			<h2 align="center">Mustafa Chasmai</h2>
+		Enthusiastic learner and curious reader. <br>
+		Can code in C++, and am learning web development to build websites like this. <br>
+		Am a good swimmwer, play squash and some table tennis.
 	</div>
-	<div class="smalldiv" style="float: left; margin-left: 20%; width: 18%;">
-			<p id="scholastic" align="left" >
-				<b><u>Academic Achievements</u></b><br>
-				
-				JEE Advanced AIR 91	<br>
-				Gold medal in INPhO and selected for the <br> 	
-				International Physics Olympiad Camp (OCSC)<br>
-				KVPY and inspire fellow
 
-			</p>
-	</div>
-</div>
-
-<div>
-	
-		<div class="smalldiv" style="float: right; margin-right: 20%;">
-			<p align="right" >
-				<b><u>Experience</u></b><br>
-				Built a line follower robot<br>
-				in Robothlon IIT Delhi.<br>
-				Participated in ICPC 2019.<br>
-				Participated in many CodeChef and <br>
-				HackerRank online coding competitions.
-			</p>
+	<div class="row" style="margin-left: 2%; margin-right: 2%">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-2" >
+			<p><img id="scholastic_pic" src="scholas.jpg" ></p>
 		</div>
-		<div class="smalldiv" >
-		</div>
-		<div style=" margin-left: 20%; margin-top: 1%; width: 18%;">
-			<p>
-				<br><br><img src="robotics.png" style="width: 220px;  " ><br><br>
-
-			</p>
-		</div>
-
-	
-</div>
-<p><br>	</p>
-<div >
-			<p align="left" style=" margin-left: 10%; margin-right: 0%; float: left; ">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-5" style="text-align: center;">
+				<p id="scholastic" >
+					<b><u>Academic Achievements</u></b><br>
 					
-					<b><u>Hobbies</u></b><br>
-					Reading and watching movies.<br>
-					Solving Rubiks cubes.<br>
-					interested in Origami
-			</p>
-			<p align="right" style=" margin-left: 0% ; margin-right: 10%; float: right;">
-				<b><u>Extra Curriculars</u></b><br>
-				Won various medals in swimming by the <br>
-				Rashtriya Life Saving Society.<br>
-				Avid player of squash and table tennis.
-			</p>
-			<img src="cube.jpg"  style="width: 200px; margin-left: 10%; margin-right: 5%; "> 
-</div>
+					JEE Advanced 2019 AIR 91	<br>
+					Gold medal in INPhO and selected for the <br> 	
+					International Physics Olympiad Camp (OCSC)<br>
+					Received KVPY and inspire fellowship.
+
+				</p>
+		</div>
+	</div>
+
+	<div class="row" style="margin-left: 2%; margin-right: 2%">
+		
+			<div class="col-sm-1"></div>
+			<div class="col-sm-4" style="text-align: center;">
+				<p  >
+					<b><u>Experience</u></b><br>
+					Built a line follower robot<br>
+					in Robothlon IIT Delhi.<br>
+					Participated in ICPC 2019.<br>
+					Participated in many <br>
+					CodeChef and HackerRank<br>
+					online coding competitions.
+				</p>
+			</div>
+			<div class="col-sm-2"></div>
+			<div class="col-sm-4">
+				<p>
+					<img src="robotics.png" style="width: 350px; " ><br><br>
+
+				</p>
+			</div>
+			<div class="col-sm-1"></div>
+
+		
+	</div>
+	<div class="row" style="margin-left: 2%; margin-right: 2%">
+		<div class="col-sm-4" style="text-align: center;">
+					<p >
+							
+							<b><u>Hobbies</u></b><br>
+							Solving Rubiks cubes.<br>
+							Reading and watching movies.<br>
+							Interested in Origami
+					</p>
+		</div>
+		<div class="col-sm-1"></div>
+		<div class="col-sm-2">
+					<img src="cube.jpg"  style="width: 150px;  "> 
+		</div>	
+		<div class="col-sm-1"></div>
+		<div class="col-sm-4" style="text-align: center;">
+					<p >
+						<b><u>Extra Curriculars</u></b><br>
+						Won various medals in swimming by <br>the 
+						Rashtriya Life Saving Society.<br>
+						Avid player of squash and table tennis.
+					</p>
+		</div>
+
+	</div>
+
+	<div align="center" style="margin-top: 200px;">
+		<textarea id="title" type="text" rows="2" cols="4" onkeyup="Allow()" placeholder="write a comment..." ></textarea>
+		<input type="submit" value="Post" onclick="insert()" style="width:50px;" />
+	</div>
+
+	<div id="display"></div>
+
 
 </body>
+
+<script type="text/javascript">
+	var titles=[];
+	var titleInput = document.getElementById("title");
+	var messageBox = document.getElementById("display");
+
+	function Allow(){
+		if (!document.title.value.match(/[a-zA-Z]$/) && document.title.value !="")
+		{
+			document.title.value="";
+			alert("Please Enter only alphabets");
+		}
+		window.location.reload();
+	}
+
+	function insert(){
+		titles.push(titleInput.value);
+		titleInput.value = "";
+		messageBox.innerHTML = "";
+		messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
+	}
+</script>
+
+
 </html>
