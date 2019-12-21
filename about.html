@@ -21,6 +21,15 @@
 		  background-image: url('back2.jpg'); 
 		  background-attachment: fixed;
 		}
+		hr {
+			display: block;
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+			margin-left: auto;
+			margin-right: auto;
+			border-style: inset;
+			border-width: 1px;
+		}
 		div {
 			margin-top: 2%;	
 		}
@@ -35,7 +44,7 @@
 		}
 
 		.zoom {
-  			transition: transform .5s; /* Animation */
+  			transition: transform .2s; /* Animation */
 		}
 		.zoom:hover {
   			transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
@@ -43,6 +52,7 @@
 
 		#display_picture{
 			width: 200px;
+			margin-top: 20px;
 		}
 		#scholastic_pic{
 			width: 200px;
@@ -105,10 +115,10 @@
 				<p id="scholastic" >
 					<b><u>Academic Achievements</u></b><br>
 					
-					JEE Advanced 2019 AIR 91	
+					JEE Advanced 2019 AIR 91.	
 					Gold medal in INPhO and selected for the 	
-					International Physics Olympiad Camp (OCSC)
-					Received KVPY and inspire fellowship.
+					International Physics Olympiad Camp (OCSC).
+					Received KVPY and INSPIRE fellowship.
 
 				</p>
 		</div>
@@ -147,7 +157,7 @@
 							<b><u>Hobbies</u></b><br>
 							Solving Rubiks cubes.
 							Reading and watching movies.
-							Interested in Origami
+							Interested in Origami.
 					</p>
 		</div>
 		
@@ -171,7 +181,7 @@
 		<div class="col-sm-4" align="center">
 			<a href="https://www.facebook.com/mustafa.chasmai.33"><img src="facebook.png" class="zoom" style="width: 50px" ></a>
 			<a href="https://www.linkedin.com/in/mustafa-chasmai-181773189/"><img src="linkedin.png" class="zoom" style="width: 50px; margin-right: 40px; margin-left: 40px;"></a>
-			<img src="facebook.png" class="zoom" style="width: 50px" >
+			<a href="https://www.quora.com/profile/Mustafa-Chasmai-1"><img src="quora.png" class="zoom" style="width: 50px" ></a>
 		</div>
 		<div class="col-sm-4"></div>
 	</div>
@@ -180,7 +190,7 @@
 		<textarea id="title" type="text" rows="2" cols="4" placeholder="write a comment..." ></textarea><br>
 		<input type="submit" value="Post" onclick="insert()" style="width:50px;" />
 	</div>
-	<div class="row" style="margin-top: 0px;">
+	<div class="row" style="margin-top: 0px; font-size: 20px;" >
 		<div class="col-sm-4" style="margin-top: 0px;"></div>
 		<div class="col-sm-4" align="center" style="margin-top: 0px;">
 			<div  style=" width: 300px;" id="display" align="center">
