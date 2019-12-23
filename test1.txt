@@ -1,1 +1,2 @@
-Hi this the test 1. I will change this in the next commit and see how to merge, squash commits
+Hi this the test 1. I have changed this
+
