@@ -1,154 +1,523 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Mustafa Chasmai</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>   
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 
-	<style>
-		body {
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	
+	<style type="text/css">
 
-		  font-family: Arial, Helvetica, sans-serif;
-		  background-image: url('back2.jpg'); 
-		  background-attachment: fixed;
+		.panel-body { 
+			padding-top: 20px;
+			padding-bottom: 0px;
+			padding-left: 30px;
 		}
-		hr {
-			display: block;
-			margin-top: 0.5em;
-			margin-bottom: 0.5em;
-			margin-left: auto;
-			margin-right: auto;
-			border-style: inset;
-			border-width: 1px;
+		.card {
+			font-family: "Comic Sans MS";
+			font-size: 18px;
+			max-width: 43vw;
+			min-width: 350px;
+			padding: 20px;
+			padding-bottom: 0px;
 		}
-		div {
-			margin-top: 2%;	
+		.card_title {
+			font-family: "Comic Sans MS";
+			font-size: 24px;
 		}
-		b{
-			font-size: 25px;
+		.right_card{
+			max-width: 17vw;
+			min-width: 200px;
+			background-color: #eaeaea;
 		}
-		p{
-			font-size: 20px;
+		.right_align{
+			float: right;
 		}
-		#title{
-			min-width: 300px;
+		.skill{
+			max-width: 20vw;
+			background-color: #eaeaea;
 		}
-		.smalldiv{
-			width: 500px;
-			max-height: 200px;
+		.skill_right{
+			max-width: 40vw;
 		}
-		.zoom {
-  			transition: transform .2s; 
+		.interest {  
+			max-width: 40vw;
+			padding: 0px;
+			margin-top: 6px;
+			/*margin-right: 0px;
+			margin-left: 0px;*/
 		}
-		.zoom:hover {
-  			transform: scale(1.5); 
+		.card-columns {
+		  column-count: 2;
 		}
-
-		#display_picture{
-			width: 200px;
-			margin-top: 20px;
+		.icons {
+			font-size: 40px;
+			padding: 30px;
+			color: rgba(255, 255, 255, 1);
+			transition: transform .2s; 
+			border-radius: 50%;
 		}
-		#scholastic_pic{
-			width: 200px;
+		.icons:hover {
+		    /*opacity: 0.7;*/
+		    transform: scale(1.5); 
+		    /*background-color: rgba(0, 0, 0, 0.4);*/
+		    color: rgba(255, 255, 255, 1);
 		}
-
-		.topnav {
-		  overflow: hidden;
-		  background-color: #333;
-		  margin-top: 2%;	
+		.interest_column{
+			max-width: 60vw; 
 		}
-
-		.topnav a {
-		  float: left;
-		  color: #ffffff;
-		  text-align: center;
-		  padding: 14px 16px;
-		  text-decoration: none;
-		  font-size: 17px;
-		}
-
-		.topnav a:hover {
-		  background-color: #ddd;
-		  color: black;
-
-		}
-
-		.topnav a.active {
-		  background-color: #4CAF50;
-		  color: white;
+		.icon_container{
+			background-color: rgba(0, 0, 0, 0.7); 
+			text-align: center; 
+			margin-top: 6vw;"
 		}
 
-
+		@media (max-width: 800px) {
+		    .card-columns {
+			  column-count: 1;
+			}
+			.skill_right{
+				max-width: 100vw;
+			}
+			.skill{
+				max-width: 20vw;
+				background-color: #eaeaea;
+			}
+			.right_card{
+				max-width: 100vw;
+				background-color: #eaeaea;
+			}
+			.card {
+				font-family: "Comic Sans MS";
+				font-size: 18px;
+				max-width: 100vw;
+				min-width: 0px;
+			}
+			.interest {  
+				min-width: 100vw;
+				padding: 0px;
+				margin-top: 0px;
+				/*margin-right: 0px;
+				margin-left: 0px;*/
+			}
+			.icons {
+				font-size: 30px;
+				padding: 10px;
+				color: rgba(255, 255, 255, 1);
+				transition: transform .2s; 
+				/*border-radius: 50%;*/
+			}
+		}
 	</style>
-	<title>
-		Mustafa Chasmai
-	</title>
-	<div class="topnav" >
-		  <a class="active" href="#home">Home</a>
-		  <a href="about.html">About</a>
-		  <a href="contact.html">Contact</a>
-	</div>
-</head>
-<body>
+	<script type="text/javascript">
+		function myFunction(value) {
+		  	/* Get the text field */
+		  	var tempInput = document.createElement("input");
+		    tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+		    tempInput.value = value;
+		    document.body.appendChild(tempInput);
+		    tempInput.select();
+		    document.execCommand("copy");
+		    document.body.removeChild(tempInput);
+		    alert("Copied my email_id: " + value);
+		}
+	</script>
 
-	<div align="center" style="margin-top: 2%;" >
-			<img id="display_picture" src="dp.jpg">
-			<h2 align="center">Mustafa Chasmai</h2>
-		Enthusiastic learner and curious reader. <br>
-		Can code in C++, and am learning web development to build websites like this. <br>
-		Hard working, earnest and cool!!
-	</div>
-
-<div class="row" style="margin-top: 200px;">
-	<div class="col-sm-4"></div>
-	<div class="col-sm-4" align="center">
-		<a href="https://www.facebook.com/mustafa.chasmai.33" target="_blank"><img src="facebook.png" class="zoom" style="width: 50px" ></a>
-		<a href="https://www.linkedin.com/in/mustafa-chasmai-181773189/" target="_blank"><img src="linkedin.png" class="zoom" style="width: 50px; margin-right: 40px; margin-left: 40px;"></a>
-		<a href="https://www.quora.com/profile/Mustafa-Chasmai-1" target="_blank"><img src="quora.png" class="zoom" style="width: 50px" ></a>
-	</div>
-	<div class="col-sm-4"></div>
-</div>
-
-	<div align="center">
-		<textarea id="title" type="text" rows="2" cols="4" onkeyup="Allow()" placeholder="write a comment..." ></textarea><br>
-		<input type="submit" value="Post" onclick="insert()" style="width:50px;" />
-	</div>
-
-	<div class="row" style="margin-top: 0px; font-size: 20px;">
-		<div class="col-sm-4" style="margin-top: 0px;"></div>
-		<div class="col-sm-4" align="center" style="margin-top: 0px;">
-			<div  style=" width: 300px;" id="display" align="center">
-				<hr>
+	</head>
+	<body style="background-color: #f5f5f5;">
+	<div id="colorlib-page" >
+		<div class="container-wrap" >
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
+<!-- 				<h1 id="colorlib-logo" style="font-size: 30px;"><a href="index.html">Mustafa Chasmai</a></h1>
+				<span class="position" style="font-size: 30px;">Sophomore at CSE, IIT Delhi</span> -->
 			</div>
-		</div>
-		<div class="col-sm-4" style="margin-top: 0px;"></div>
-	</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar" >
+				<div id="navbar" class="collapse"  >
+					<ul>
+						<li class="active" ><a style="font-size: 25px;" href="#" data-nav-section="home">About</a></li>
+						<!-- <li><a style="font-size: 25px;" href="#" data-nav-section="about">About</a></li> -->
+						<li><a style="font-size: 25px;" href="#" data-nav-section="education">Education</a></li>
+						<li><a style="font-size: 25px;" href="#" data-nav-section="experience">Experience</a></li>
+						<li><a style="font-size: 25px;" href="#" data-nav-section="skills">Skills</a></li>
+						<li><a style="font-size: 25px;" href="#" data-nav-section="interest">Interests</a></li>
+						<li><a style="font-size: 25px;" href="#" data-nav-section="hobbies">Hobbies</a></li>
+						<!-- <li><a href="#" data-nav-section="blog">Blog</a></li> -->
+						<!-- <li><a style="font-size: 25px;" href="#" data-nav-section="contact">Contact</a></li> -->
+					</ul>
+				</div>
+			</nav>
+
+			<!-- <div class="colorlib-footer">
+				<p><small>&copy; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> 
+<!-- </span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></span></small></p>
+				<ul>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="#"><i class="icon-twitter2"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div> -->
+		<!-- 	<ul>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="#"><i class="icon-twitter2"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+				</ul> -->
+
+		</aside>
+
+		<div id="colorlib-main">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
+				   	<li style="background-image: url(images/img_bg_1.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner js-fullheight">
+					   					<div class="desc">
+						   					<h1 style="min-width: 50vw;"><strong>MUSTAFA CHASMAI</strong></h1>
+						   					<h2>Sophomore | B.Tech. | Computer Science | IIT Delhi</h2>
+											</div>
+											<div id = 'summary' style="font-size: 24px;">
+												I am an enthusiastic learner and curious thinker. Born in Mumbai, brought up in Pune; I aim to circumnavigate the Multiverse.
+											</div>
+											<div class="container-fluid icon_container" >
+												
+														<a href="https://www.facebook.com/mustafa.chasmai.33" target="_blank" class="fa fa-facebook icons"></a>
+														<a href="https://www.linkedin.com/in/mustafa-chasmai-181773189/" target="_blank" class="fa fa-linkedin icons"></a>
+														<!-- <a href="https://www.quora.com/profile/Mustafa-Chasmai-1" target="_blank" class="fa fa-github icons"></a> -->
+														<a href="https://github.com/mustafa1728" target="_blank" class="fa fa-github icons"></a>
+														
+														<a href = "#" class="fa fa fa-envelope icons" onclick="myFunction('cs1190341@iitd.ac.in')"></a>
+														<!-- <input  value="cs1190341@iitd.ac.in" id="email_id"> -->
+														<!-- href="mailto: cs1190341@iitd.ac.in" -->
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				  	</ul>
+			  	</div>
+			</section>
+
+			<section class="colorlib-education" data-section="education">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Almae Matres</span>
+							<h2 class="colorlib-heading">Education</h2>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card-group animate-box" data-animate-effect="fadeInRight" draggable = "true">
+								<div class="card">
+										<h4 class="card_title">B.Tech in Computer Science</h4>
+										<p> First Year CGPA: 9.733</p>
+								</div>
+								<div class="card right_card">
+										<h4 class="card_title">IIT Delhi</h4>
+										<p> 2019 - 20</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card-group animate-box" data-animate-effect="fadeInRight" draggable = "true">
+								<div class="card">
+										<h4 class="card_title">Higher Secondary School</h4>
+										<p> SSC exam: 89.08%</p>
+								</div>
+								<div class="card right_card">
+										<h4 class="card_title">S.P. College</h4>
+										<p> 2017 - 19</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card-group animate-box" data-animate-effect="fadeInRight" draggable = "true">
+								<div class="card">
+										<h4 class="card_title">Intermediate and Secondary School</h4>
+										<p> SSC exam: 93.80%</p>
+								</div>
+								<div class="card right_card">
+										<h4 class="card_title">Rosary School</h4>
+										<!-- <img class="card-img" src="images/rosary.png"  style=""> -->
+										<p> 2003 - 17</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Experience</span>
+							<h2 class="colorlib-heading animate-box">Internships</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card-group animate-box" data-animate-effect="fadeInRight" draggable = "true">
+										<div class="card">
+												<h4 class="card_title">Automated Box Counting</h4>
+												<p> AI and Robotics Intern</p>
+												<p style="font-size: 15px; font-family: sans-serif;"> Leveraged various Deep Learning and Computer Vision techniques for the unsolved problem of auto- mated box localisation and counting in Bulk storage warehouses for the drone-based automated inventory management system.</p>
+										</div>
+										<div class="card right_card">
+												<h4 class="card_title">Flytbase, Pune</h4>
+												<img class="card-img" src = "images/flytbase.png" style="margin-bottom: 2vh;">
+												<p> Apr 2020 - July 2020</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card-group animate-box" data-animate-effect="fadeInRight" draggable = "true">
+										<div class="card">
+												<h4 class="card_title">Automatic Stock Replenishment App (StockUp)</h4>
+												<p> Software Developer</p>
+												<p style="font-size: 15px; font-family: sans-serif;">
+													Worked on front-end web development for StockUp. Learned basics of Angular, NodeJS and MongoDb and general backend development
+												</p>
+										</div>
+										<div class="card right_card">
+												<h4 class="card_title">ShoppinPal, Pune.</h4>
+												<img class="card-img" src = "images/shoppinpal.png" style="margin-bottom: 2vh;">
+												<p> Dec 2019</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+
+			<section class="colorlib-skills" data-section="skills">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Specialty</span>
+							<h2 class="colorlib-heading animate-box">Technical Skills</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card-group animate-box" data-animate-effect="fadeInRight" draggable = "true">
+										<div class="card skill">
+												<h4 class="card_title">Programming Languages</h4>
+										</div>
+										<div class="card skill_right">
+												<h4 class="card_title">Python, C++</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card-group animate-box" data-animate-effect="fadeInRight" draggable = "true">
+										<div class="card skill">
+												<h4 class="card_title">Data Analysis and ML</h4>
+										</div>
+										<div class="card skill_right">
+												<h4 class="card_title">Tensorflow, Pytorch, MATLAB, NumPy, SciPy</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card-group animate-box" data-animate-effect="fadeInRight" draggable = "true">
+										<div class="card skill">
+												<h4 class="card_title">Web Development</h4>
+										</div>
+										<div class="card skill_right">
+												<h4 class="card_title">HTML, CSS, Javascript, Angular, Ionic, Flask, Django</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card-group animate-box" data-animate-effect="fadeInRight" draggable = "true">
+										<div class="card skill">
+												<h4 class="card_title">Other Software</h4>
+										</div>
+										<div class="card skill_right">
+												<h4 class="card_title">AutoCAD, Photoshop, Illustrator</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 
-</body>
+			<section class="colorlib-skills" data-section="interest">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">what I would like to do</span>
+							<h2 class="colorlib-heading animate-box">Interests</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="card-columns interest_column">
+							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
+								<img class="card-img-top" src="images/ml.png" alt="Card image">
+								<div class="card-img-overlay">
+									<p class="card_title">Machine Learning</p>
+									<p class="card-text">Object Detection, <br> Natural Language Processing, <br> Reinforcement Learning</p>
+								</div>
+							</div>
+							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
+								<img class="card-img-top" src="images/web_dev.png" alt="Card image">
+								<div class="card-img-overlay">
+									<p class="card_title">Web Development</p>
+									<p class="card-text">Angular, Ionic, Flask, Django, </p>
+								</div>
+							</div>
+							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
+								<img class="card-img-top" src="images/cv1.png" alt="Card image">
+								<div class="card-img-overlay">
+									<p class="card_title">Computer Vision</p>
+									<p class="card-text">Image processing, Affine and Perspective transformations</p>
+								</div>
+							</div>
+							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
+								<img class="card-img-top" src="images/designing.png" alt="Card image">
+								<div class="card-img-overlay">
+									<p class="card_title">Photoediting/Designing</p>
+									<p class="card-text">Photoshop, Illustrator</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-<script type="text/javascript">
-	var titles=[];
-	var i=0;
-	var titleInput = document.getElementById("title");
-	var messageBox = document.getElementById("display");
 
-	function insert(){
-		titles.push(titleInput.value);
-		titleInput.value = "";
-		messageBox.innerHTML += titles[i]+ "<hr>";
-		i++;
-	}
-</script>
+			<section class="colorlib-skills" data-section="hobbies">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">what I love to do</span>
+							<h2 class="colorlib-heading animate-box">hobbies</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="card-columns interest_column" >
+							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
+								<img class="card-img-top" src="images/cube.png" alt="Card image">
+								<div class="card-img-overlay">
+									<p class="card_title">Rubik's Cube</p>
+									<p class="card-text">Solved physical upto 9 x 9 x 9; <br>virtual upto 20 x 20 x 20</p>
+								</div>
+							</div>
+							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
+								<img class="card-img-top" src="images/read.png" alt="Card image">
+								<div class="card-img-overlay">
+									<p class="card_title">Books</p>
+									<p class="card-text">Mostly thriller-fiction/fantasy, <br>sometimes romance</p>
+								</div>
+							</div>
+							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
+								<img class="card-img-top" src="images/photo.png" alt="Card image">
+								<div class="card-img-overlay">
+									<p class="card_title">Photography</p>
+									<p class="card-text">Random clicks with devlish timing</p>
+								</div>
+							</div>
+							<!-- <div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
+								<img class="card-img-top" src="images/swim.png" alt="Card image">
+								<div class="card-img-overlay">
+									<p class="card_title">Swimming</p>
+									<p class="card-text">Varios medals in 6th-10th standard</p>
+								</div>
+							</div> -->
+							<!-- <div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
+								<img class="card-img-top" src="images/squash.png" alt="Card image">
+								<div class="card-img-overlay">
+									<p class="card_title">Squash</p>
+									<p class="card-text">Avid player. <br> Hostel team vice Captain</p>
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</section>
 
 
+
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
+
