@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Mustafa Chasmai</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -28,11 +29,13 @@
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	
 	<style type="text/css">
-
 		.panel-body { 
 			padding-top: 20px;
 			padding-bottom: 0px;
 			padding-left: 30px;
+		}
+		.name {
+			font-size: 60px;
 		}
 		.card {
 			font-family: "Comic Sans MS";
@@ -128,6 +131,18 @@
 				transition: transform .2s; 
 				/*border-radius: 50%;*/
 			}
+			.name{
+				font-size: 50px;
+				line-height: 110%;
+				margin-top: 4vh;
+			}
+			#summary{
+				margin-top: 4vh;
+				font-size: 12px;
+			}
+			.designation{
+				display: none;
+			}
 		}
 	</style>
 	<script type="text/javascript">
@@ -165,6 +180,7 @@
 						<li><a style="font-size: 25px;" href="#" data-nav-section="skills">Skills</a></li>
 						<li><a style="font-size: 25px;" href="#" data-nav-section="interest">Interests</a></li>
 						<li><a style="font-size: 25px;" href="#" data-nav-section="hobbies">Hobbies</a></li>
+						<li><a style="font-size: 25px;" href="#" data-nav-section="sports">Sports</a></li>
 						<!-- <li><a href="#" data-nav-section="blog">Blog</a></li> -->
 						<!-- <li><a style="font-size: 25px;" href="#" data-nav-section="contact">Contact</a></li> -->
 					</ul>
@@ -203,11 +219,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
 					   				<div class="slider-text-inner js-fullheight">
 					   					<div class="desc">
-						   					<h1 style="min-width: 50vw;"><strong>MUSTAFA CHASMAI</strong></h1>
-						   					<h2>Sophomore | B.Tech. | Computer Science | IIT Delhi</h2>
+						   					<p style="min-width: 50vw;" class="name"><strong>MUSTAFA CHASMAI</strong></p>
+						   					<h2 class="designation">Sophomore | B.Tech. | Computer Science | IIT Delhi</h2>
 											</div>
 											<div id = 'summary' style="font-size: 24px;">
-												I am an enthusiastic learner and curious thinker. Born in Mumbai, brought up in Pune; I aim to circumnavigate the Multiverse.
+												I am an enthusiastic learner and curious thinker. Born in Mumbai, brought up in Pune; I plan to circumnavigate the Multiverse.
 											</div>
 											<div class="container-fluid icon_container" >
 												
@@ -235,6 +251,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<span class="heading-meta">My Almae Matres</span>
 							<h2 class="colorlib-heading">Education</h2>
+							<!-- style="color: #ffffff; font-size: 30px; margin-bottom: 4vh;" -->
 						</div>
 					</div>
 				</div>
@@ -474,20 +491,35 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<p class="card-text">Random clicks with devlish timing</p>
 								</div>
 							</div>
-							<!-- <div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
-								<img class="card-img-top" src="images/swim.png" alt="Card image">
-								<div class="card-img-overlay">
-									<p class="card_title">Swimming</p>
-									<p class="card-text">Varios medals in 6th-10th standard</p>
-								</div>
-							</div> -->
-							<!-- <div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-skills" data-section="sports">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">what I like to play</span>
+							<h2 class="colorlib-heading animate-box">Sports</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="card-columns interest_column" >
+							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
 								<img class="card-img-top" src="images/squash.png" alt="Card image">
 								<div class="card-img-overlay">
 									<p class="card_title">Squash</p>
 									<p class="card-text">Avid player. <br> Hostel team vice Captain</p>
 								</div>
-							</div> -->
+							</div>
+							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
+								<img class="card-img-top" src="images/swim.png" alt="Card image">
+								<div class="card-img-overlay">
+									<p class="card_title">Swimming</p>
+									<p class="card-text">Varios medals in 6th-10th standard</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
