@@ -29,6 +29,17 @@
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	
 	<style type="text/css">
+		.fixed-bg {
+		  /*min-height: 500px;*/
+		  background-attachment: fixed;
+		  background-position: inherit ;
+		  background-repeat: no-repeat;
+		  background-size: 100% 100% ;
+	/*	  border-style: solid;
+		  border-color: #ffff;
+		  border-left: none;
+		  border-right: none;*/
+		}
 		.panel-body { 
 			padding-top: 20px;
 			padding-bottom: 0px;
@@ -160,7 +171,7 @@
 	</script>
 
 	</head>
-	<body style="background-color: #f5f5f5;">
+	<body style="background-color: rgba(50, 50, 50, 1)">
 	<div id="colorlib-page" >
 		<div class="container-wrap" >
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
@@ -223,7 +234,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						   					<h2 class="designation">Sophomore | B.Tech. | Computer Science | IIT Delhi</h2>
 											</div>
 											<div id = 'summary' style="font-size: 24px;">
-												I am an enthusiastic learner and curious thinker. Born in Mumbai, brought up in Pune; I aim to circumnavigate the Multiverse.
+												I am an enthusiastic learner and curious thinker. Born in Mumbai, brought up in Pune; I plan to circumnavigate the Multiverse.
 											</div>
 											<div class="container-fluid icon_container" >
 												
@@ -245,15 +256,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			  	</div>
 			</section>
 
-			<section class="colorlib-education" data-section="education">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Almae Matres</span>
-							<h2 class="colorlib-heading">Education</h2>
-							<!-- style="color: #ffffff; font-size: 30px; margin-bottom: 4vh;" -->
+			<section class="colorlib-education fixed-bg" data-section="education" style="background-image: url(images/education.jpg)">
+				<div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.8); margin-bottom: 2vh;">
+					<div class="colorlib-narrow-content">
+						<div class="row" >
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft" >
+								<span class="heading-meta">My Almae Matres</span>
+								<h2 class="colorlib-heading" style="margin-bottom: 2vh; font-size: 30px;">Education</h2>
+								<!-- style="color: #ffffff; font-size: 30px; margin-bottom: 4vh;" -->
+							</div>
 						</div>
 					</div>
+					
 				</div>
 				<div class="container">
 					<div class="row">
@@ -302,14 +316,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				</div>
 			</section>
 
-			<section class="colorlib-experience" data-section="experience">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Experience</span>
-							<h2 class="colorlib-heading animate-box">Internships</h2>
-						</div>
+			<section class="colorlib-experience" data-section="experience" style="background-color: #000000;">
+				<!-- style="background-image: url(images/internship.jpg)" -->
+				<div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.8); margin-bottom: 2vh; padding-left: 5vw">
+							<div class="row" >
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft" >
+									<span class="heading-meta">Experience</span>
+									<h2 class="colorlib-heading" style="margin-bottom: 2vh; font-size: 30px;">Internships</h2>
+									<!-- style="color: #ffffff; font-size: 30px; margin-bottom: 4vh;" -->
+								</div>
+							</div>
 					</div>
+
+				<div class="colorlib-narrow-content">
+					
+	
 					<div class="row">
 						<div class="container">
 							<div class="row">
@@ -352,14 +373,24 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			</section>
 			
 
-			<section class="colorlib-skills" data-section="skills">
-				<div class="colorlib-narrow-content">
+			<section class="colorlib-skills fixed-bg" data-section="skills" style="background-image: url(images/skills.jpg)">
+				<!-- <div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<span class="heading-meta">My Specialty</span>
 							<h2 class="colorlib-heading animate-box">Technical Skills</h2>
 						</div>
+					</div> -->
+					<div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.8); margin-bottom: 2vh; padding-left: 5vw">
+							<div class="row" >
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft" >
+									<span class="heading-meta">My Specialty</span>
+									<h2 class="colorlib-heading" style="margin-bottom: 2vh; font-size: 30px;">Technical Skills</h2>
+									<!-- style="color: #ffffff; font-size: 30px; margin-bottom: 4vh;" -->
+								</div>
+							</div>
 					</div>
+				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="container">
 							<div class="row">
@@ -416,14 +447,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			</section>
 
 
-			<section class="colorlib-skills" data-section="interest">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">what I would like to do</span>
-							<h2 class="colorlib-heading animate-box">Interests</h2>
-						</div>
+			<section class="colorlib-skills" data-section="interest" style="background-color: #000000;">
+					<div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.8); margin-bottom: 2vh; padding-left: 5vw">
+							<div class="row" >
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft" >
+									<span class="heading-meta">what I would like to do</span>
+									<h2 class="colorlib-heading" style="margin-bottom: 2vh; font-size: 30px;">Interests</h2>
+									<!-- style="color: #ffffff; font-size: 30px; margin-bottom: 4vh;" -->
+								</div>
+							</div>
 					</div>
+
+				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="card-columns interest_column">
 							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
@@ -460,14 +495,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			</section>
 
 
-			<section class="colorlib-skills" data-section="hobbies">
+			<section class="colorlib-skills fixed-bg" data-section="hobbies" 
+			style="background-image: url(images/hobbies2.jpg); background-repeat: repeat; background-size: 50%; ">
+				<div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.8); margin-bottom: 2vh; padding-left: 5vw">
+							<div class="row" >
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft" >
+									<span class="heading-meta">what I love to doo</span>
+									<h2 class="colorlib-heading" style="margin-bottom: 2vh; font-size: 30px;">Hobbies</h2>
+									<!-- style="color: #ffffff; font-size: 30px; margin-bottom: 4vh;" -->
+								</div>
+							</div>
+				</div>
+
 				<div class="colorlib-narrow-content">
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">what I love to do</span>
+							<span class="heading-meta"></span>
 							<h2 class="colorlib-heading animate-box">hobbies</h2>
 						</div>
-					</div>
+					</div> -->
 					<div class="row">
 						<div class="card-columns interest_column" >
 							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
@@ -496,14 +542,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				</div>
 			</section>
 
-			<section class="colorlib-skills" data-section="sports">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">what I like to play</span>
-							<h2 class="colorlib-heading animate-box">Sports</h2>
-						</div>
+			<section class="colorlib-skills" data-section="sports" style="background-color: #000000;">
+					<div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.8); margin-bottom: 2vh; padding-left: 5vw">
+							<div class="row" >
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft" >
+									<span class="heading-meta">what I like to play</span>
+									<h2 class="colorlib-heading" style="margin-bottom: 2vh; font-size: 30px;">Sports</h2>
+									<!-- style="color: #ffffff; font-size: 30px; margin-bottom: 4vh;" -->
+								</div>
+							</div>
 					</div>
+
+				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="card-columns interest_column" >
 							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
