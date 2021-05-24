@@ -95,6 +95,13 @@
 			text-align: center; 
 			margin-top: 6vw;"
 		}
+		.bgvideo{
+		  position: fixed;
+		  right: 0;
+		  bottom: 0;
+		  min-width: 100%; 
+		  min-height: 100%;
+		}
 
 		@media (max-width: 800px) {
 		    .card-columns {
@@ -161,6 +168,7 @@
 
 	</head>
 	<body style="background-color: #f5f5f5;">
+		<video class="bgvideo" autoplay loop muted playsinline src="images/video1.mp4"></video>
 	<div id="colorlib-page" >
 		<div class="container-wrap" >
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
@@ -246,7 +254,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			</section>
 
 			<section class="colorlib-education" data-section="education">
-				<div class="colorlib-narrow-content">
+				<div class="colorlib-narrow-content" >
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<span class="heading-meta">My Almae Matres</span>
@@ -310,6 +318,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							<h2 class="colorlib-heading animate-box">Internships</h2>
 						</div>
 					</div>
+				</div>
 					<div class="row">
 						<div class="container">
 							<div class="row">
@@ -348,7 +357,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							</div>
 						</div>
 					</div>
-				</div>
+				
 			</section>
 			
 
@@ -360,6 +369,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							<h2 class="colorlib-heading animate-box">Technical Skills</h2>
 						</div>
 					</div>
+				</div>
 					<div class="row">
 						<div class="container">
 							<div class="row">
@@ -411,7 +421,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								</div>
 							</div>
 						</div>
-					</div>
 				</div>
 			</section>
 
@@ -424,6 +433,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							<h2 class="colorlib-heading animate-box">Interests</h2>
 						</div>
 					</div>
+				</div>
 					<div class="row">
 						<div class="card-columns interest_column">
 							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
@@ -455,7 +465,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								</div>
 							</div>
 						</div>
-					</div>
 				</div>
 			</section>
 
@@ -468,6 +477,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							<h2 class="colorlib-heading animate-box">hobbies</h2>
 						</div>
 					</div>
+				</div>
 					<div class="row">
 						<div class="card-columns interest_column" >
 							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
@@ -492,7 +502,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								</div>
 							</div>
 						</div>
-					</div>
 				</div>
 			</section>
 
@@ -504,6 +513,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							<h2 class="colorlib-heading animate-box">Sports</h2>
 						</div>
 					</div>
+				</div>
 					<div class="row">
 						<div class="card-columns interest_column" >
 							<div class="card interest animate-box" data-animate-effect="fadeInRight" draggable = "true">
@@ -522,7 +532,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 							</div>
 						</div>
 					</div>
-				</div>
 			</section>
 
 
@@ -549,6 +558,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	<script src="js/show-on-scroll.js"></script>
 
 	</body>
 </html>
