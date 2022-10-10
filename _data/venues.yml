@@ -1,23 +1,17 @@
 "WACV":
-  url: https://wacv2023.thecvf.com
   color: "#00369f"
 
 "MICCAI":
-  url: https://wacv2023.thecvf.com
   color: "#00369f"
 
 "CIKM":
-  url: https://www.cikm2022.org
   color: "#00369f"
 
 "SNCS":
-  url: https://www.springer.com/journal/42979
   color: "#00369f"
 
 "ICIP":
-  url: https://2022.ieeeicip.org
   color: "#00369f"
 
 "TMI (in review)":
-  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42
   color: "#00369f"
