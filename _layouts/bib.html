@@ -22,12 +22,11 @@
           <img class="preview z-depth-1 rounded w-100" src="{{ entry.preview | prepend: '/assets/img/publications/' | relative_url }}">
           {%- endif -%}
         {%- endif -%}
+        <br>
         {%- if entry.fau -%}
-          <br>
           <div style="font-size: 0.75rem;">{{entry.fau}}</div>
         {%- endif -%}
         {%- if entry.core -%}
-          <br>
           <div style="font-size: 0.75rem;">{{entry.core}}</div>
         {%- endif -%}
         </div>
