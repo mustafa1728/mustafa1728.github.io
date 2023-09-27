@@ -19,5 +19,8 @@
 "CoRL-W":
   color: "#0036ff"
 
-"PR":
+"PR (under review)":
+  color: "#0036ff"
+
+"ICME":
   color: "#0036ff"
