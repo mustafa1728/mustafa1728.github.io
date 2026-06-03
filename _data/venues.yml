@@ -19,11 +19,14 @@
 "CoRL-W":
   color: "#0036ff"
 
-"PR (under review)":
+"PR":
   color: "#0036ff"
 
 "ICME":
   color: "#0036ff"
 
 "NeurIPS":
+  color: "#0036ff"
+
+"ICML":
   color: "#0036ff"
