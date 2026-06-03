@@ -14,7 +14,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Ph.D. student majoring in Computer Science from UMass Amherst, supervised by [Prof. Subhransu Maji](https://people.cs.umass.edu/~smaji), and working broadly in Computer Vision. Prior to this, I completed my Bachelors degree in Computer Science from IIT Delhi. 
+I am a  PhD Student at UMass Amherst, working broadly in Computer Vision under [Prof. Subhransu Maji](https://people.cs.umass.edu/~smaji). My research focuses on AI applied for multimodal ecological applications such as bioacoustics, geolocalization, and morphometrics. Prior to this, I completed my Bachelors degree in Computer Science from IIT Delhi. 
 
 <!-- You can find more about me from my [CV](https://mustafa1728.github.io/resume.pdf) or [Scholar](https://scholar.google.com/citations?user=c9dbnFcAAAAJ&hl=en). -->
 
