@@ -123,8 +123,8 @@ blockquote {
     text-align: center;
 
     img {
-      width: 160px !important;
-      height: 160px;
+      width: 200px !important;
+      height: 200px;
       object-fit: cover;
       border-radius: 50% !important;
     }
@@ -159,6 +159,12 @@ blockquote {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
+}
+
+@media (max-width: 575.98px) {
+  header {
+    display: none;
+  }
 }
 
 @media (max-width: 575.98px) {
