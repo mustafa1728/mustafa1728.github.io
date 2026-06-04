@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-10-31
+date: 2024-08-30
 inline: true
 related_posts: false
 ---
 
-Wrapped up my internship (student researcher) at Google Deepmind
+Wrapped up my internship at Dolby

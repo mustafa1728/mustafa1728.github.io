@@ -39,7 +39,7 @@
           <!-- Title -->
           <div class="title">{{entry.title}}</div>
           <!-- Author -->
-          <div class="author" style="font-size: 0.9rem;">
+          <div class="author" style="font-size: 0.8rem; opacity: 0.5;">
           {% assign author_array_size = entry.author_array | size %}
 
           {% assign author_array_limit = author_array_size %}
@@ -130,7 +130,7 @@
             {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
           {%- endif -%}
           {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
-          <div class="periodical" style="font-size: 0.9rem;">
+          <div class="periodical" style="font-size: 0.8rem; opacity: 0.5;">
             {{ periodical | strip }}
           </div>
         {%- endif %}

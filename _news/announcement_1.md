@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-08-30
+date: 2023-09-01
 inline: true
 related_posts: false
 ---
 
-Wrapped up my internship at Dolby
+Started my PhD at UMass Amherst
