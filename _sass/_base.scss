@@ -95,6 +95,10 @@ blockquote {
 .profile {
   width: 100%;
 
+  img {
+    border-radius: 10% !important;
+  }
+
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -110,6 +114,21 @@ blockquote {
 }
 .profile.float-left{
   margin-right: 1rem;
+}
+
+@media (max-width: 575.98px) {
+  .profile {
+    float: none !important;
+    margin: 0 auto 1.5rem !important;
+    text-align: center;
+
+    img {
+      width: 160px !important;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50% !important;
+    }
+  }
 }
 
 @media (min-width: 576px) {
@@ -140,7 +159,23 @@ blockquote {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
-  opacity: 0.95;
+}
+
+@media (max-width: 575.98px) {
+  .navbar-collapse {
+    background-color: var(--global-bg-color);
+    border-top: 1px solid var(--global-divider-color);
+    padding: 0.5rem 0;
+
+    .navbar-nav {
+      margin-left: 0 !important;
+
+      .nav-item .nav-link {
+        padding: 0.5rem 1rem;
+        text-align: left;
+      }
+    }
+  }
 }
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
