@@ -517,6 +517,18 @@ footer.sticky-bottom {
     span {
       font-size: 1.5rem;
     }
+    a.btn {
+      font-size: 0.65rem;
+      vertical-align: middle;
+      border: 1px solid var(--global-text-color);
+      background-color: var(--global-divider-color);
+      color: var(--global-text-color);
+      &:hover {
+        background-color: var(--global-hover-color);
+        border-color: var(--global-hover-color);
+        color: var(--global-bg-color);
+      }
+    }
   }
   h2.year {
     color: var(--global-divider-color);
