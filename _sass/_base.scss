@@ -549,7 +549,26 @@ footer.sticky-bottom {
       .preview {
         width: 100%;
         min-width: 80px;
-        max-width: 200px;
+        max-width: 250px;
+      }
+      img.preview {
+        width: auto !important;
+        max-width: 100%;
+        max-height: 187px; // 250px * 3/4
+        display: block;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 575.98px) {
+        div.preview {
+          max-width: 100%;
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+        img.preview {
+          max-width: 100%;
+          max-height: 75vw; // viewport_width * 3/4
+        }
       }
       .abbr {
         height: 2rem;
