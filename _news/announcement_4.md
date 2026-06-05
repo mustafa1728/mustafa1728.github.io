@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Wrapped up my internship (student researcher) at Google Deepmind
+Wrapped up internship (student researcher) at Google Deepmind

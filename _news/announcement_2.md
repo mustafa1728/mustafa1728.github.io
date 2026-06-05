@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Wrapped up my internship at Dolby
+Wrapped up internship at Dolby

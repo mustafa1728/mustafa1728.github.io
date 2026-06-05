@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started my PhD at UMass Amherst
+Started PhD at UMass Amherst
