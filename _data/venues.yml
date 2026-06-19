@@ -34,5 +34,11 @@
 "CVPR":
   color: "#0036ff"
 
+"ECCV":
+  color: "#0036ff"
+
+"ICCV":
+  color: "#0036ff"
+
 "CVPR-W":
   color: "#0036ff"
